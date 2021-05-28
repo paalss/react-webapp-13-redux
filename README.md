@@ -1,6 +1,6 @@
 # React webapp 13 Redux
 
-![webapp](src/assets/app-2021-05-25-181302.png)
+![webapp](src/assets/app.png)
 
 ```
 npm install
