@@ -1,14 +1,15 @@
 import { useDispatch, useSelector } from "react-redux";
-
+import { authActions } from "../store/auth";
 import classes from "./Header.module.css";
-import { authActions } from "../store/index";
 
 const Header = () => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const isAuth = useSelector((state) => state.auth.isAuthenticated);
-  const logOutHandler=()=>{
+
+  const logOutHandler = () => {
     dispatch(authActions.logout());
-  }
+  };
+
   return (
     <header className={classes.header}>
       <h1>Redux Auth</h1>
